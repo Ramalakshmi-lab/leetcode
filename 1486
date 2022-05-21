@@ -1,0 +1,17 @@
+class Solution {
+public:
+    int xorOperation(int n, int start) {
+        int a[n];
+     a[0]=start;
+        for(int i=1;i<n;i++)
+        {
+           a[i]=start+(2*i);
+  }
+        int p=a[0];
+        for(int i=1;i<n;i++)
+        {
+            p^=a[i];
+        }
+        return p;
+    }
+};
