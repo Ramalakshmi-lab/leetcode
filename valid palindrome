@@ -1,0 +1,19 @@
+class Solution(object):
+    def isPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        c=[]
+        b=[]
+        a=list(s)
+        for i in range(len(a)):
+            if(a[i].isdigit() or a[i].isalpha()):
+                d=a[i].lower()
+                c.append(d)
+            
+        b=c[::-1]
+        if b==c:
+            return True
+        else:
+            return False
