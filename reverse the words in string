@@ -1,0 +1,11 @@
+// to remove unnecessary spaces
+ex: s=" hello world "
+o/p=s="hello world"
+syntax: s=" ".join(s.strip().split())
+strip()-->to remove the space at starting and end
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        s=" ".join(s.strip().split())
+        s=s.split(" ")
+        s=s[::-1]
+        return " ".join(s)
